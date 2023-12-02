@@ -372,6 +372,50 @@ p {
     gap: 20px;
   }
 }
+/* ################################## */
+#Gallre .contenar .gallre {
+  display: grid;
+  margin: 0px 330px;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "pizza beef bugrar"
+    "pizza beef bugrar"
+    "newpiazz beef craspy"
+    "newpiazz beef craspy"
+    "newpiazz beef Lyulya-kebab"
+    "newpiazz Frittata Lyulya-kebab"
+    "newpiazz Frittata Lyulya-kebab"
+    ". Frittata .";
+  width: 1000px;
+  overflow: hidden;
+  margin: auto;
+}
+#Gallre .contenar .gallre .Pizza {
+  grid-area: pizza;
+}
+#Gallre .contenar .gallre .Beef {
+  grid-area: beef;
+}
+#Gallre .contenar .gallre .Burger {
+  grid-area: bugrar;
+}
+#Gallre .contenar .gallre .Levitation {
+  grid-area: newpiazz;
+}
+#Gallre .contenar .gallre .Crispy {
+  grid-area: craspy;
+}
+#Gallre .contenar .gallre .Lyulya {
+  grid-area: Lyulya-kebab;
+}
+#Gallre .contenar .gallre .Frittata {
+  grid-area: Frittata;
+}
+/* ################################## */
+
 #Gallre .contenar .gallre .img {
   border: 5px solid #fff;
   overflow: auto;
